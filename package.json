@@ -1,0 +1,9 @@
+{
+  "name": "esda-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "lint": "echo \"(root) nothing to lint yet\" && exit 0",
+    "test": "echo \"(root) no tests yet\" && exit 0"
+  }
+}

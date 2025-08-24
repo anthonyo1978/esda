@@ -6,9 +6,8 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
-  binaryTargets = ["native", "linux-arm64-openssl-3.0.x"]
-
+  // (optional) keep binaryTargets if you want, but it's not required
+  // binaryTargets = ["native", "linux-arm64-openssl-3.0.x"]
 }
 
 datasource db {
@@ -164,3 +163,9 @@ model settings {
   created_at            DateTime @default(now())
   updated_at            DateTime @default(now())
 }
+model Item {
+  id        String   @id @default(cuid())
+  title     String
+  createdAt DateTime @default(now())
+}
+
