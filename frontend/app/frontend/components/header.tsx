@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import MobileMenu from '@/app/frontend/components/MobileMenu';
+import MobileMenu from './MobileMenu';
 
 export default function Header() {
   const [isMounted, setIsMounted] = useState(false);
